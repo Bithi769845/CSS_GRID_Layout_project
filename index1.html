@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>        
         <title>CSS Grid Layout</title>
         <link rel="stylesheet" href="style2.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     
     </head>
   <body>
@@ -36,6 +38,191 @@
   <button onclick="goPrev()">Prev</button>
   <button onclick="goNext()">Next</button>
  </div> 
+
+
+ <div class="about_us_container">
+  <h3>About Us</h3>
+  <div class="about_us about_item">
+    <span class="text-short">
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+       industry. Lorem Ipsum has been the industry's standard dummy 
+       text ever since the 1500s, when an unknown printer took a 
+       galley of type and scrambled it to make a type specimen book. 
+       It has survived not only five centuries, but also the leap into 
+       electronic typesetting, remaining essentially unchanged. It was 
+       popularised in the 1960s with the release of Letraset sheets 
+       containing Lorem Ipsum passages, and more recently with desktop 
+       publishing software like Aldus PageMaker including versions of 
+       Lorem Ipsum.
+    </span>
+    <span class="text-full" style="display: none;">
+     
+
+      Why do we use it?
+It is a long established fact that a reader will be distracted by the 
+readable content of a page when looking at its layout. The point of using
+ Lorem Ipsum is that it has a more-or-less normal distribution of 
+ letters, as opposed to using 'Content here, content here', making it 
+ look like readable English. Many desktop publishing packages and web 
+ page editors now use Lorem Ipsum as their default model text, and a 
+ search for 'lorem ipsum' will uncover many web sites still in their 
+ infancy. Various versions have evolved over the years, sometimes by 
+ accident, sometimes on purpose (injected humour and the like).
+</span>
+    <a href="#" class="see-more" onclick="toggleText()">Read More</a>
+  </div>
+  <div class="image about_item">
+    <img src="images/18.jpg" style="width: 500px; height: 500px;">
+  </div>
+</div>
+
+
+<div class="news_section">
+  <h3>Recent News</h3>
+<div class="recent_news about_item" >
+  <h4>News Title </h4>
+<p>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+   when an unknown printer took a galley of type and scrambled it to make a type 
+   specimen book. <a href="#" class="read_more" onclick="toggleText()">Read More</a>
+</p>
+</div>
+<div class="feature_image">
+  <img src="images/3-1.jpg" style="width: 500px; height: 500px;">
+</div>
+
+</div>
+
+
+
+<div class="project_section">
+  <h3>Projects</h3>
+  <div class="news-container">
+    <div class="project about_item">
+      <h4>News Title</h4>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        <a href="#" class="read_more" onclick="toggleText()">Read More</a>
+      </p>
+    </div>
+    <div class="project_feature_image">
+      <img src="images/2-1.jpg" alt="Featured Image" style="width: 100%; height: auto;">
+    </div>
+  </div>
+</div>
+
+
+<div class="full_gallery">
+  <h3>Projects</h3>
+<div class="image_gallery">
+  <div class="fisrt-image-box">
+    <img src="images/v1.jpg">
+    <p>Image title one</p>
+  </div>
+  <div class="second-image-box">
+    <img src="images/v4-1.jpg">
+    <p>Image title two</p>
+  </div>
+  <div class="third-image-box">
+    <img src="images/18.jpg">
+    <p>Image title three</p>
+  </div>
+
+</div>
+</div>
+
+
+
+<div class="details_gallery">
+  <h2>Gallery Details</h2>
+  <h4>Title of the Gallery</h4>
+<div class="image_gallery_details"> 
+  <div class="image-box1">
+    <img src="images/v1.jpg">  
+  </div>
+  <div class="image-box2">
+    <img src="images/v4-1.jpg">
+  </div>
+  <div class="image-box3">
+    <img src="images/18.jpg">
+  </div>
+  <div class="image-box1">
+    <img src="images/v1.jpg">  
+  </div>
+  <div class="image-box2">
+    <img src="images/v4-1.jpg">
+  </div>
+  <div class="image-box2">
+    <img src="images/v4-1.jpg">
+  </div>
+</div>
+</div>
+
+<div class="contact_us">
+  <h3>Contact Us</h3>
+  <div class="contact_us_container">
+    <div class="address">
+      <div class="contact-item">
+        <span>Address:</span>
+        <i class="fas fa-map-marker-alt"></i> 
+        <span>1234 Main St, City, Country</span>
+      </div>
+
+      <div class="contact-item">
+        <span>Email:</span>
+        <i class="fas fa-envelope"></i> 
+        <span>bithimony01904@gmail.com</span>
+      </div>
+
+      <div class="contact-item">
+        <span>Phone:</span>
+        <i class="fas fa-phone-alt"></i> 
+        <span>+123 456 7890</span>
+      </div>
+    </div>
+
+    <div class="contact-form-section">
+      <h2>Contact Form</h2>
+      <form class="contact-form" action="/submit-form" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.493559951891!2d-122.4014336846811!3d37.79461327975837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b6c855e59%3A0x7b5c9ae6d83b20c3!2sGoogle%20Building%20243!5e0!3m2!1sen!2sus!4v1628041810122!5m2!1sen!2sus"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+
   <script src="script.js"></script>
   </body>
 </html>

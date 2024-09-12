@@ -80,3 +80,254 @@ body {
   font-size: 25px;
   padding:5px ;
 }
+/* slider_section end */
+
+/* about us section start */
+h3{
+  color: black;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.about_us_container {
+  height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1f);
+    color: black;
+    grid-gap: 10px;
+    padding: 10px;
+  
+
+}
+
+.about_us_container h3 {
+  font-size: 2rem;
+}
+
+.about_item {  
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+.about_us_container .about_us{ 
+  grid-column: 1/ 6;
+  background-color: #f9f9f9;
+}
+.see-more {
+  color: blue;
+  cursor: pointer;
+  font-size: 16px;
+}
+.see-less {
+  display: none;
+}
+.about_us_container .image{
+  width:100%;
+  height: 500px;
+  grid-column: 6/ 12;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* news section start */
+.news_section{
+  height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1f);
+    color: black;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.news_section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.recent_news{
+  grid-column: 1/ 6;
+  background-color: #f9f9f9;
+}
+
+.feature_image{
+  grid-column: 6/ 12;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* project section start */
+.project_section {
+  padding: 20px;
+}
+
+.project_section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns: text and image */
+  grid-gap: 20px;
+  
+}
+
+.project {
+  background-color: #f9f9f9;
+  padding: 30px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.project h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.read_more {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read_more:hover {
+  text-decoration: underline;
+}
+
+.project_feature_image img {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* image gallery start */
+.image_gallery{
+  display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+padding:20px;
+gap:5px;
+}
+.image_gallery img{
+  width: 100%;
+  height: 300px;
+}
+
+.full_gallery h3{
+ font-size: 1.5rem;
+}
+.fisrt-image-box, .second-image-box, .third-image-box{
+  border: #007bff 2px solid;
+}
+
+/* Details gallery */
+.details_gallery h2{
+  font-size: 2rem;
+  color:black;
+  margin-left:20px;
+}
+
+.details_gallery h4{
+  font-size: 1rem;
+  color:black;
+  margin-left:20px;
+}
+
+.image_gallery_details{
+  display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+ padding: 10px;
+ gap:5px;
+}
+.image_gallery_details img{
+  width: 100%;
+  height: 500px;
+}
+.image-box1, .image-box2, .image-box3{
+  border: #007bff 2px solid;
+}
+/* contact section */
+
+.contact_us {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+.contact_us h3 {
+  font-size: 2rem;
+  color: #333;
+}
+.contact_us_container {
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+  gap: 30px;
+padding: 20px;
+}
+.address {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  align-items: center;
+}
+.contact-item span:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.contact-item i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-form-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: grid;
+  
+  gap: 15px;
+}
+
+.form-group {
+  display: grid;
+  
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

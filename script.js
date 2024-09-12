@@ -28,4 +28,20 @@ const slideImage = () => {
   });
 };
 
+function toggleText() {
+  const shortText = document.querySelector('.text-short');
+  const fullText = document.querySelector('.text-full');
+  const seeMore = document.querySelector('.see-more');
+
+  if (fullText.style.display === 'none') {
+   
+    fullText.style.display = 'inline';
+    seeMore.innerHTML = 'See Less';
+  } else {
+    shortText.style.display = 'inline';
+    fullText.style.display = 'none';
+    seeMore.innerHTML = 'See More';
+  }
+}
+
 
